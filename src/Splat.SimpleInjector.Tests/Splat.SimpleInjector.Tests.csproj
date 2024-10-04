@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0</TargetFrameworks>
+    <NoWarn>$(NoWarn);1591;CA1707;SA1633;CA2000</NoWarn>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Splat.Common.Test\Splat.Common.Test.csproj" />
+    <ProjectReference Include="..\Splat.SimpleInjector\Splat.SimpleInjector.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Update="xunit.runner.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

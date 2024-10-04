@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>$(SplatTargetFrameworks)</TargetFrameworks>
+    <TargetFrameworks Condition=" '$(OS)' == 'Windows_NT' ">$(TargetFrameworks);net462</TargetFrameworks>
+    <AssemblyName>Splat.Raygun</AssemblyName>
+    <RootNamespace>Splat</RootNamespace>
+    <Authors>.NET Foundation and Contributors</Authors>
+    <Description>Raygun integrations for Splat</Description>
+    <PackageId>Splat.Raygun</PackageId>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Mindscape.Raygun4Net.NetCore" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Splat\Splat.csproj" />
+  </ItemGroup>
+</Project>

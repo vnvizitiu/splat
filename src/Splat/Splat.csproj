@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>$(SplatTargetFrameworks)</TargetFrameworks>
+    <AssemblyName>Splat</AssemblyName>
+    <RootNamespace>Splat</RootNamespace>
+    <Authors>.NET Foundation and Contributors</Authors>
+    <Description>A library to make things cross-platform that should be</Description>
+    <PackageId>Splat</PackageId>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+  
+</Project>

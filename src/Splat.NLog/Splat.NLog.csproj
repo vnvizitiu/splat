@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>$(SplatTargetFrameworks)</TargetFrameworks>
+    <TargetFrameworks Condition=" '$(OS)' == 'Windows_NT' ">$(TargetFrameworks);net462</TargetFrameworks>
+    <AssemblyName>Splat.NLog</AssemblyName>
+    <RootNamespace>Splat</RootNamespace>
+    <Authors>.NET Foundation and Contributors</Authors>
+    <Description>NLog integrations for Splat</Description>
+    <PackageId>Splat.NLog</PackageId>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="NLog" />
+    <PackageReference Include="System.Collections.Immutable" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Splat\Splat.csproj" />
+  </ItemGroup>
+</Project>

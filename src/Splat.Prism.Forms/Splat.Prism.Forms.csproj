@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>$(SplatTargetFrameworks)</TargetFrameworks>
+    <TargetFrameworks Condition=" '$(OS)' == 'Windows_NT' ">$(TargetFrameworks);net462</TargetFrameworks>
+    <Description>Prism adapter for Splat including Xamarin Forms adapters.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Prism.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Splat.Prism\Splat.Prism.csproj" />
+  </ItemGroup>
+</Project>
